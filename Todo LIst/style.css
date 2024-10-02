@@ -1,39 +1,49 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
 }
-body{
+
+body {
     display: flex;
 }
-.add-section{
+
+body {
+    display: flex;
+    background-color: aliceblue;
+}
+
+.add-section {
     width: 40%;
     height: 100vh;
     background-color: indigo;
     border-radius: 0 25px 25px 0;
-    & h1{
+
+    & h1 {
         color: aliceblue;
         font-size: 3em;
         font-weight: bold;
         padding-bottom: 90px;
     }
 }
-.task-section{
+
+.task-section {
     width: 60%;
     height: 100vh;
     padding: 10px;
-    background-color: aliceblue;
-    
+
 }
-.add-flex{
+
+.add-flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#task-field{
+
+#task-field {
     margin: 10px;
     width: 60%;
     padding: 10px;
@@ -41,31 +51,41 @@ body{
     border: none;
     border-radius: 5px;
 }
-#add-btn{
+
+#add-btn {
     padding: 10px;
     background-color: aliceblue;
     font-size: 1.2em;
     border: none;
-    border-radius: 5px; 
+    border-radius: 5px;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
         background-color: grey;
         color: white;
         transition: .2s;
     }
 }
-#task-list{
+
+#task-list {
     list-style: none;
     margin: 5px 10px;
 }
-.task-item{
+
+.task-item {
     border: 0;
     padding: 20px;
     border-bottom: 1px solid grey;
     font-size: 1.2em;
     position: relative;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 6px 2px 13px -4px;
+    }
 }
-.task-delete{
+
+.task-delete {
     position: absolute;
     right: 10px;
     padding: 7px;
@@ -74,4 +94,19 @@ body{
     background-color: red;
     color: white;
     cursor: pointer;
+}
+
+@media screen and (max-width:700px) {
+    body {
+        flex-direction: column;
+    }
+
+    .add-section {
+        width: 100%;
+        border-radius: 0 0 25px 25px;
+    }
+
+    .task-section {
+        width: 100%;
+    }
 }
