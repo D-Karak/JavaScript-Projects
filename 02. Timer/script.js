@@ -2,6 +2,12 @@ let timeInput=document.getElementById("timeInput");
 let startBtn=document.getElementById("startBtn");
 let countDownDisplay=document.getElementById("countDown");
 startBtn.addEventListener("click", count);
+startBtn.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        count();
+    }
+});
+
 let countdown;
 function count(){
     let seconds=timeInput.value;
