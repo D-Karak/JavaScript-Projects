@@ -33,6 +33,7 @@ function calculate(operation) {
     // showing the result
     document.getElementById("result").textContent = `Result: ${result}`;
 }
+//for clear every field
 document.getElementById("clear-button").addEventListener("click",()=>{
     document.getElementById("num1").value="";
     document.getElementById("num2").value="";
