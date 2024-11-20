@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weatherapp-container">
+        <div id="weather">
+            <div>
+                <p id="current-day" style="font-size:xx-large;font-weight: bold;"><strong>Loading...</strong></p>
+                <p id="current-date">Loading...</p>
+                <p id="location">Loading...</p>
+            </div>
+            <div>
+                <img id="weather-logo" alt="weather-icon"/>
+                <p id="temperature">Loading...</p>
+                <p id="weather-condition">Loading...</p>
+            </div>
+        </div>
+        <div id="weather-details">
+            <div id="weather-data">
+                    <div><strong>REGION</strong><P id="region-data">Loading...</P></div>
+                    <div><strong>HUMIDITY</strong><P id="humidity-data">Loading...</P></div>
+                    <div><strong>WIND</strong><P id="wind-data">Loading...</P></div>
+                    <div><strong>LOCAL TIME</strong><P id="local-time-data">Loading...</P></div>
+            </div>
+            <div id="forecast">
+                <div class="forecast-data">
+                    <img src="" class="forecast-weather-icon"alt="forecast-logo"/>
+                    <p class="forecast-day">sunday</p>
+                    <p class="forecast-day-temperature">0 c</p>
+                </div>
+                <div class="forecast-data">
+                    <img src="" class="forecast-weather-icon"alt="forecast-logo" width="50"/>
+                    <p class="forecast-day">sunday</p>
+                    <p class="forecast-day-temperature">0 c</p>
+                </div>
+                <div class="forecast-data">
+                    <img src="" class="forecast-weather-icon"alt="forecast-logo"/>
+                    <p class="forecast-day">sunday</p>
+                    <p class="forecast-day-temperature">0 c</p>
+                </div>
+                <div class="forecast-data">
+                    <img src="" class="forecast-weather-icon"alt="forecast-logo"/>
+                    <p class="forecast-day">sunday</p>
+                    <p class="forecast-day-temperature">0 c</p>
+                </div>
+            </div>
+            <div id="weather-location">
+                <input type="text" id="input-location" placeholder="Enter Location"/>
+                <button id="search-location">Search Location</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

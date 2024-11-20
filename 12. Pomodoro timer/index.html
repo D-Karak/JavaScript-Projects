@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="pomodoro-container">
+        <div id="visual-countdown">05:00</div>
+        <div id="progress-bar">
+            <div id="animation-progress"></div>
+        </div>
+        <div style="width: 100%; display: flex; justify-content: space-between;"><span>Long Break</span><input id="long-break-field" type="number" min="20" max="59" value="25"></div>
+        <div style="width: 100%; display: flex; justify-content: space-between;"><span>Short Break</span><input id="short-break-field" type="number" min="0" max="19" value="5"></div>
+        <button id="select-break"></button>
+        <button id="start-timer">Start</button>
+        <div id="session"><span>Session Compleated : </span><span id="session-count">0</span></div>
+        <audio src="audio/clock-ticking-sound-effect-240503.mp3" id="ticking-sound" loop preload="auto"></audio>
+        <audio src="audio/level-up-191997.mp3" id="alert-sound" loop preload="auto"></audio>
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
