@@ -18,7 +18,6 @@ if(localStorage.getItem("session")){
     sessionCount.innerHTML=localStorage.getItem("session");
 }
 // default appearence
-visualCountdown.textContent=formatTime(shortBreak.value*60)
 selectBreak.textContent="SHORT BREAK";
 longBreak.style.opacity="0.5"
 longBreak.setAttribute("readonly", true);
@@ -72,8 +71,8 @@ function countDown(time){
         totalseconds--;
         if(totalseconds<0){
             clearInterval(countdown);
-            tickingSound.pause();
             alertSound.play();
+            tickingSound.pause();
             alert("Your Break is Up!");
             visualCountdown.classList.remove("scale-animation")
             animationProgress.classList.remove("fill-color");
