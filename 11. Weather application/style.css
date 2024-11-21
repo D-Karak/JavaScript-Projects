@@ -116,9 +116,15 @@ body{
 }
 @media screen and (max-width:600px){
     .weatherapp-container{
+        height: 100%;
+        border-radius: 0px;
         flex-direction: column;
         & #weather,#weather-details{
             width: 100%;
+        }
+        & #weather{
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
         }
     }
 }
