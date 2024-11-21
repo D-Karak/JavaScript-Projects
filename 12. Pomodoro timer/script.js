@@ -70,9 +70,9 @@ function countDown(time){
     countdown=setInterval(()=>{
         totalseconds--;
         if(totalseconds<0){
-            clearInterval(countdown);
             alertSound.play();
             tickingSound.pause();
+            clearInterval(countdown);
             alert("Your Break is Up!");
             visualCountdown.classList.remove("scale-animation")
             animationProgress.classList.remove("fill-color");
