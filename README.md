@@ -2,7 +2,7 @@ Pomodoro Timer : https://pomodoro-timer-doaq.vercel.app/
 
 Weather Application : https://weather-application-eccru.vercel.app/
 
-ToDo List : https ://mydomtodolist.netlify.app/
+ToDo List : https://mydomtodolist.netlify.app/
 
 Accordion Section : https://accordionsectioncss.netlify.app/
 
